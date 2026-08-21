@@ -46,6 +46,7 @@ jobs:
         run: |
           test -f build/index.html
           test -f build/style.css
+          test -f test -f build/THIS_FILE_DOES_NOT_EXIST.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
